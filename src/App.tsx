@@ -10,6 +10,7 @@ import Profile from "./components/profile/Profile";
 import ProfileSettings from "./components/profileSettings/ProfileSettings";
 import Courses from "./components/courses/Courses";
 import CoursesDetail from "./components/coursesDetail/CoursesDetail";
+import Alboms from "./components/alboms/Alboms";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
         <Route path="/profileSettings" element={<ProfileSettings />} />
         <Route path="/courses" element={<Courses />} />
         <Route path="/coursesDetail" element={<CoursesDetail />} />
+        <Route path="/alboms" element={<Alboms />} />
       </Routes>
     </BrowserRouter>
   );
