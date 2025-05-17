@@ -1,4 +1,4 @@
-import { Children, ReactNode } from "react";
+import { ReactNode } from "react";
 import Aside from "../aside/Aside";
 import Lope from "../../assets/icons/Lope.svg";
 import styles from "./MainPage.module.scss";

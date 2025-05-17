@@ -8,13 +8,13 @@ import Man from "../../assets/icons/Man.svg";
 const Aside = () => {
   return (
     <aside className="aside">
-      <a href="#" className="aside__ava">
+      <a href="/profile" className="aside__ava">
         <img src={Man} alt="" />
       </a>
       <ul className="aside__menu">
-        <li className="aside__elem"><a className="aside__link" href="#"><img src={Hat} alt="icons" /></a></li>
-        <li className="aside__elem"><a className="aside__link" href="#"><img src={Lope} alt="icons" /></a></li>
-        <li className="aside__elem"><a className="aside__link" href="#"><img src={Heart} alt="icons" /></a></li>
+        <li className="aside__elem"><a className="aside__link" href="/courses"><img src={Hat} alt="icons" /></a></li>
+        <li className="aside__elem"><a className="aside__link" href="/categories"><img src={Lope} alt="icons" /></a></li>
+        <li className="aside__elem"><a className="aside__link" href="/alboms"><img src={Heart} alt="icons" /></a></li>
         <li className="aside__elem"><a className="aside__link" href="#"><img src={Chat} alt="icons" /></a></li>
       </ul>
     </aside>

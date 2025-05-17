@@ -5,7 +5,7 @@
   grid-template-rows: auto 1fr;
   align-items: center;
   height: 100%;
-
+  position: sticky;
   &__menu {
     display: flex;
     flex-direction: column;

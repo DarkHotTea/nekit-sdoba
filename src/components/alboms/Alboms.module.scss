@@ -34,6 +34,20 @@
     border: 2px solid transparent;
     background: linear-gradient(90deg,rgba(130, 194, 255, 1) 0%, rgba(255, 152, 123, 1) 100%) border-box;
     border-radius: 20px;
+    &:first-child {
+      background: linear-gradient(#1C1C2C 0 0) padding-box, linear-gradient(90deg,rgba(130, 194, 255, 1) 0%, rgba(255, 152, 123, 1) 100%) border-box;
+      .alboms__elemImage {
+        display: grid;
+        place-items: center;
+        height: 100%;
+        img {
+          width: auto;
+        }
+      }
+      .alboms__elemLabel {
+        font-size: 18px;
+      }
+    }
     &Image {
       border-radius: 20px;
       overflow: hidden;      
@@ -61,8 +75,12 @@
   }
   &__editLink, &__like {
     position: absolute;
-    right: 0;
-    z-index: 50;
+    right: 12px;
   }
-
+  &__editLink {
+    bottom: 12px;
+  }
+  &__like {
+    top: 12px;
+  }
 }

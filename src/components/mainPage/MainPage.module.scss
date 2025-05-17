@@ -10,6 +10,7 @@
 
   &__menu {
     grid-column: 1;
+    position: relative;
     grid-row: 1 / span 2;
   }
   &__searchBar {
