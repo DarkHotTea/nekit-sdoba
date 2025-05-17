@@ -1,0 +1,75 @@
+.coursesDetail {
+  color: white;
+  font-family: "Jura", sans-serif;
+  font-weight: 300;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  &__title {
+    text-align: center;
+    color: white;
+    padding: 4px 0;
+    font-size: 36px;
+    font-family: "Jura", sans-serif;
+    font-weight: 300;
+    width: 700px;
+    box-shadow: 5px 5px 15px 0px rgba($color: #000000, $alpha: 0.25);
+    background-color: #474775;
+    border-radius: 20px;
+  }
+}
+
+.course {
+  display: grid;
+  grid-template-columns: 0.4fr 0.6fr;
+  row-gap: 20px;
+  &__about {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 58px;
+  }
+  &__heading {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    &Title {
+      font-size: 50px;
+    }
+  }
+  &__skills {
+    
+  }
+  &__skill {
+    list-style: disc;
+    font-size: 18px;
+    &:first-child {
+      color: #FC997E;
+    }
+  }
+  &__time {
+    font-size: 24px;
+    opacity: 0.7;
+  }
+  &__title {
+    font-size: 36px;
+  }
+  &__preview {
+    img {
+      border-radius: 30px;
+      width: 100%;
+      max-height: 333px;
+    }
+  }
+  &__description {
+    grid-column: 1 / span 2;
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 25px;
+    p {
+      text-indent: 70px;
+      font-size: 26px;
+    }
+  }
+}

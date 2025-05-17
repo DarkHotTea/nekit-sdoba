@@ -1,0 +1,97 @@
+.startPage {
+  min-height: 100vh;
+  background-size: cover;
+  color: #fff;
+}
+
+.register {
+  margin-left: auto;
+  min-height: 100vh;
+  padding: 27px 65px;
+  background-color: #3a3a5b;
+  width: 100%;
+  max-width: 45%;
+  display: flex;
+  flex-direction: column;
+
+  &__content {
+    flex: 1 1 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 35px;
+
+    > form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+
+      label {
+        input:not([type="checkbox"]) {
+          padding: 12px 19px;
+          background-color: #474775;
+          width: 100%;
+          font-size: 30px;
+          color: inherit;
+          &::placeholder {
+            font-size: 15px;
+            color: #a1a0a0;
+          }
+        }
+      }
+
+      label:has(span) {
+        span {
+          margin-left: 30px;
+        }
+      }
+
+      > div {
+        font-size: 15px;
+        display: flex;
+        justify-content: space-between;
+        a {
+          color: #A1A0A0;
+        }
+      }
+
+      button {
+        margin-top: 27px;
+        color: inherit;
+        padding: 11px 0;
+        font-size: 20px;
+        border-radius: 5px;
+        background-color: #E9A98F;
+      }
+    }
+  }
+
+  &__title {
+    font-size: 45px;
+  }
+
+  &__subtitle {
+    font-size: 18px;
+    color: #b7b7b7;
+  }
+}
+
+.header {
+  margin-left: auto;
+  flex: 0 0 auto;
+  &__list {
+    display: flex;
+    gap: 20px;
+  }
+  &__elem {
+    a {
+      color: #898888;
+    }
+    &_selected {
+      a {
+        color: inherit;
+        text-decoration: underline;
+      }
+    }
+  }
+}

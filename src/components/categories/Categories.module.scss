@@ -1,0 +1,50 @@
+.categories {
+  display: grid;
+  row-gap: 17px;
+  &__title {
+    font-weight: 500;
+    font-size: 40px;
+    color: #fff;
+  }
+  &__subtitle {
+    font-weight: 800;
+    color: rgba($color: #fff, $alpha: 0.5);
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 17px;
+  }
+  &__elem {
+    position: relative;
+    border: 2px solid transparent;
+    background: linear-gradient(90deg,rgba(130, 194, 255, 1) 0%, rgba(255, 152, 123, 1) 100%) border-box;
+    border-radius: 20px;
+    &Image {
+      border-radius: 20px;
+      overflow: hidden;      
+      img {
+        width: 100%;
+        max-height: 200px; 
+      }      
+    }
+    &Label {
+      background: linear-gradient(135deg,rgba(130, 194, 255, 1) 0%, rgba(185, 175, 197, 1) 100%);
+      font-family: "Jura", sans-serif;
+      font-size: 20px;
+      color: #fff;
+      text-shadow: 1px 2px 5px rgba($color: #1B2630, $alpha: 0.6);
+      position: absolute;
+      text-align: center;
+      padding-block: 5px 10px;
+      border-top-right-radius: 30px;
+      border-bottom-left-radius: 18px;
+      width: 156px;
+      height: 37px;
+      bottom: -1px;
+      left: -2px;
+    }
+  }
+}

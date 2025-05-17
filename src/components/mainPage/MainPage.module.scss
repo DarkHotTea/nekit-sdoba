@@ -1,0 +1,45 @@
+.main {
+  min-height: 100vh;
+  padding: 0 8px;
+  padding-right: 92px;
+  background-color: #3a3a5b;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto 1fr;
+  column-gap: 92px;
+
+  &__menu {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+  }
+  &__searchBar {
+    background-color: #474775;
+    border-radius: 25px;
+    padding: 8px 13px;
+    margin: 20px 0;
+    grid-row: 1;
+    grid-column: 2;
+    display: flex;
+  }
+  &__searchButton {
+  }
+  &__searchInput {
+    padding-left: 10px;
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    color: #fff;
+    font-size: 30px;
+    &::placeholder {
+      font-family: "Jura", sans-serif;
+      font-weight: bold;
+      color: rgba($color: #fff, $alpha: 0.5);
+      font-size: 20px;
+    }
+  }
+  &__content {
+    grid-column: 2;
+    grid-row: 2;
+    padding-bottom: 20px;
+  }
+}

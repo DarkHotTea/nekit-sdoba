@@ -1,0 +1,60 @@
+.startPage {
+  min-height: 100vh;
+  background-size: cover;
+  color: #fff;
+  display: grid;
+  backdrop-filter: blur(7px);
+  place-items: center;
+}
+
+.recoverQuery {  
+  border-radius: 10px;
+  max-width: 450px;
+  padding: 57px 43px;
+  background-color: #3a3a5b;
+  display: flex;
+  flex-direction: column;
+
+  &__content {
+    flex: 1 1 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 63px;
+    text-align: center;
+
+    > form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+
+      label {
+        input {
+          padding: 7px 15px;
+          background-color: #474775;
+          width: 100%;
+          font-size: 35px;
+          color: inherit;
+          &::placeholder {
+            font-size: 15px;
+            color: #a1a0a0;
+          }
+        }
+      }
+
+      button {
+        margin-top: 48px;
+        color: inherit;
+        padding: 12px 22px;
+        font-size: 18px;
+        border-radius: 5px;
+        background-color: #e9a98f;
+        align-self: center;
+      }
+    }
+  }
+
+  &__title {
+    font-size: 30px;
+  }
+}

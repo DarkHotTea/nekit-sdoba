@@ -1,0 +1,14 @@
+.aside {
+  background-color: #474775;
+  display: grid;
+  padding: 27px 25px;
+  grid-template-rows: auto 1fr;
+  align-items: center;
+  height: 100%;
+
+  &__menu {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+}

@@ -1,0 +1,98 @@
+.profileSettings {
+  background-color: #474775;
+  border-radius: 30px;
+  &__row {
+    display: flex;
+    position: relative;
+  }
+  &__form {
+    color: #bebec9;  
+    padding: 40px 0px;
+  }
+}
+
+.form {
+  padding-left: 80px;
+  border-left: 3px solid #bebec9;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  position: relative;
+
+  &__title {
+    font-size: 16px;
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-bottom: 40px;
+    border-bottom: 3px solid #bebec9;
+  }
+
+  &__inputFields {
+    display: grid;
+    grid-template-columns: 1.25fr 0.75fr;
+    column-gap: 20px;
+    row-gap: 25px;
+  }
+  &__inputField {
+    grid-column: 1 / span 2;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    &:first-child {
+      grid-column: 1;
+    }
+    &:nth-child(2) {
+      grid-column: 2;
+    }
+    span {
+      text-transform: uppercase;
+      color: #bebec9;
+    }
+    input {
+      background-color: transparent;
+      border: 3px solid #bebec9;
+      font-size: 16px;
+      padding: 8px;
+      color: white;
+      border-radius: 5px;
+    }
+  }
+  textarea {
+    background-color: transparent;
+    border: 3px solid #bebec9;
+    border-radius: 5px;
+    padding: 10px;
+    color: inherit;
+    font-weight: 300;
+    font-size: inherit;
+    resize: none;
+  }
+  &__buttons {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    gap: 20px;
+    button {
+      padding: 10px 25px;
+      border-radius: 5px;
+      border: 3px solid #E9A98F;
+      text-transform: uppercase;
+      &:first-child {
+        color: inherit;
+        background-color: transparent;
+      }
+      &:last-child {
+        color: white;
+        background-color: #E9A98F;
+      }
+    }
+  }
+}
+
+.exitLink {
+  position: absolute;
+  right: 23px;
+  top: 18px;
+}

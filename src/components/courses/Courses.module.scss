@@ -1,0 +1,51 @@
+.courses {
+  &__heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  &__title {
+    color: white;
+    padding: 4px 0;
+    font-size: 36px;
+    font-family: "Jura", sans-serif;
+    font-weight: 300;
+    width: 740px;
+    box-shadow: 5px 5px 15px 0px rgba($color: #000000, $alpha: 0.25);
+    background-color: #474775;
+    border-radius: 20px;
+    margin-bottom: 7px;
+  }
+  &__slogan {
+    font-size: 30px;
+    font-weight: 300;
+    color: rgba($color: #d3d2d2, $alpha: 0.53);
+  }
+  &__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 80px;
+    row-gap: 45px;
+  }
+  &__elem {
+    min-height: 186px;
+    border-radius: 30px;
+    background-size: cover;
+  }
+  &__link {
+    border-radius: 30px;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    backdrop-filter: blur(4px);
+    span {
+      color: white;
+      font-size: 42px;
+      font-weight: 300;
+      font-family: "Jura", sans-serif;
+    }
+  }
+}
