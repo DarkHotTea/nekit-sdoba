@@ -1,0 +1,109 @@
+.chat {
+  background-color: #474775;
+  color: white;
+  border-radius: 30px;
+  padding: 14px 40px 48px 20px;
+  &__head {
+    display: flex;
+    margin-bottom: 13px;
+  }
+  &__title {
+    flex: 1 1 100%;
+    text-align: center;
+    font-weight: 500;
+    font-size: 40px;
+  }
+  &__profile {
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  &__nickname {
+    font-size: 20px;
+    font-weight: 300;
+    text-decoration: underline;
+    text-decoration-color: #e9a98f;
+  }
+  &__ava {
+    img {
+      border: 2px solid #e9a98f;
+      border-radius: 50%;
+      max-width: 60px;
+    }
+  }
+  &__main {
+    display: flex;
+    gap: 70px;
+    min-height: 891px;
+  }
+  &__categories {
+    flex: 0 1 405px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  &__subtitle {
+    margin-bottom: 26px;
+    font-weight: 700;
+    font-size: 30px;
+    opacity: 0.5;
+  }
+  &__category {
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+  &__elem {
+    display: flex;
+    align-items: center;
+    gap: 29px;
+    cursor: pointer;
+    &:hover {
+      .chat {
+        &__mark {
+          border-color: #e9a98f;
+        }
+        &__rightArrow {
+          span {
+            border-color: #e9a98f;
+          }
+        }
+      }
+    }
+  }
+  &__mark {
+    flex: 1 1 100%;
+    padding-bottom: 8px;
+    border-bottom: 0.5px solid rgba($color: #fff, $alpha: 0.5);
+    &Title {
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 2px;
+    }
+    &Subtitle {
+      font-size: 15px;
+      font-weight: 300;
+      opacity: 0.8;
+      font-family: "Jura", sans-serif;
+    }
+  }
+  &__rightArrow {
+    display: grid;
+    place-items: center;
+    span {
+      display: inline-block;
+      width: 13px;
+      height: 13px;
+      transform: rotate(-45deg);
+      border-bottom: 1.25px solid white;
+      border-right: 1.25px white solid;
+    }
+  }
+  &__field {
+    flex: 1 1 auto;    
+    border-radius: 30px;
+  }
+}

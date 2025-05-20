@@ -11,6 +11,7 @@ import ProfileSettings from "./components/profileSettings/ProfileSettings";
 import Courses from "./components/courses/Courses";
 import CoursesDetail from "./components/coursesDetail/CoursesDetail";
 import Alboms from "./components/alboms/Alboms";
+import Chat from "./components/chat/Chat";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
         <Route path="/courses" element={<Courses />} />
         <Route path="/coursesDetail" element={<CoursesDetail />} />
         <Route path="/alboms" element={<Alboms />} />
+        <Route path="/chat" element={<Chat />} />
       </Routes>
     </BrowserRouter>
   );

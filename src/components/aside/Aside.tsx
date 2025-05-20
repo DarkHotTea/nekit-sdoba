@@ -15,7 +15,7 @@ const Aside = () => {
         <li className="aside__elem"><a className="aside__link" href="/courses"><img src={Hat} alt="icons" /></a></li>
         <li className="aside__elem"><a className="aside__link" href="/categories"><img src={Lope} alt="icons" /></a></li>
         <li className="aside__elem"><a className="aside__link" href="/alboms"><img src={Heart} alt="icons" /></a></li>
-        <li className="aside__elem"><a className="aside__link" href="#"><img src={Chat} alt="icons" /></a></li>
+        <li className="aside__elem"><a className="aside__link" href="/chat"><img src={Chat} alt="icons" /></a></li>
       </ul>
     </aside>
   );
